@@ -74,5 +74,10 @@ namespace BlendingSilverlightWalkthrough.Data
                 }
             }
         }
+
+        public IEnumerable<Album> FindAll()
+        {
+            return Albums;
+        }
     }
 }

@@ -16,29 +16,6 @@
         
         <viewModels:ListBoxStatesViewModel x:Key="ViewModel" />
 		
-		<DataTemplate x:Key="AlbumTemplate">
-			<Grid Margin="5">
-				<Grid.RowDefinitions>
-					<RowDefinition />
-					<RowDefinition />
-				</Grid.RowDefinitions>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="Auto" />
-					<ColumnDefinition />
-				</Grid.ColumnDefinitions>
-				
-				<Image 
-					Grid.RowSpan="2"
-					Grid.Column="0"
-					Width="64" Height="64"
-					Source="{Binding AlbumArt, StringFormat='../Assets/AlbumArt/{0}'}" />
-					
-				<TextBlock Grid.Row="0" Grid.Column="1" Margin="3" VerticalAlignment="Center" Text="{Binding Artist}" FontWeight="Bold" />
-				<TextBlock Grid.Row="1" Grid.Column="1" Margin="3" VerticalAlignment="Center" Text="{Binding Name}" />
-				
-			</Grid>
-		</DataTemplate>
-        
     </sdk:Page.Resources>
     
     <Grid x:Name="LayoutRoot" DataContext="{Binding Source={StaticResource ViewModel}}">
