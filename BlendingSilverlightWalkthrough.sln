@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlendingSilverlightWalkthroughSite", "BlendingSilverlightWalkthroughSite\", "{DAAF8A17-C36C-435E-9A08-C1F4A244152B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/BlendingSilverlightWalkthroughSite"
+		Debug.AspNetCompiler.PhysicalPath = "BlendingSilverlightWalkthroughSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\BlendingSilverlightWalkthroughSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/BlendingSilverlightWalkthroughSite"
+		Release.AspNetCompiler.PhysicalPath = "BlendingSilverlightWalkthroughSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\BlendingSilverlightWalkthroughSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "25034"
+		ProjOutputReferences = "{4036554e-4ff0-41bf-95a0-a2fe911289da}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlendingSilverlightWalkthrough", "BlendingSilverlightWalkthrough\BlendingSilverlightWalkthrough.csproj", "{4036554E-4FF0-41BF-95A0-A2FE911289DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAAF8A17-C36C-435E-9A08-C1F4A244152B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAAF8A17-C36C-435E-9A08-C1F4A244152B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAAF8A17-C36C-435E-9A08-C1F4A244152B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAAF8A17-C36C-435E-9A08-C1F4A244152B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4036554E-4FF0-41BF-95A0-A2FE911289DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4036554E-4FF0-41BF-95A0-A2FE911289DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4036554E-4FF0-41BF-95A0-A2FE911289DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4036554E-4FF0-41BF-95A0-A2FE911289DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

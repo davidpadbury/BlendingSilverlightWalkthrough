@@ -1,0 +1,14 @@
+*/bin
+*/Bin
+*/obj
+*/Obj
+!/lib
+*.user
+*.suo
+_ReSharper.*
+*.sln.cache
+*.xap
+*.vspcc
+*.vscc 
+*.vssscc
+
