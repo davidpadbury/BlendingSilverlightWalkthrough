@@ -89,11 +89,14 @@
     </Compile>
     <Compile Include="Data\Album.cs" />
     <Compile Include="Data\AlbumRepository.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\FluidLayoutViewModel.cs" />
+    <Compile Include="ViewModels\FluidMasterDetailViewModel.cs" />
     <Compile Include="ViewModels\ListBoxStatesViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\ChildWindow1.xaml.cs">
       <DependentUpon>ChildWindow1.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,9 @@
     </Compile>
     <Compile Include="Views\FluidLayout.xaml.cs">
       <DependentUpon>FluidLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FluidMasterDetail.xaml.cs">
+      <DependentUpon>FluidMasterDetail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -157,6 +163,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\FluidLayout.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\FluidMasterDetail.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
