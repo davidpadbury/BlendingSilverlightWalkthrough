@@ -27,7 +27,7 @@
                 <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Home" TargetName="ContentFrame" Content="home" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidLayout" TargetName="ContentFrame" Content="fluid layout" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMoving" TargetName="ContentFrame" Content="fluid moving" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMasterDetail" TargetName="ContentFrame" Content="fluid master detail" />
                 </StackPanel>
             </Border>

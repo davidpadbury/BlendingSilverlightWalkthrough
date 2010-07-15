@@ -93,7 +93,7 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\FluidLayoutViewModel.cs" />
+    <Compile Include="ViewModels\FluidMovingViewModel.cs" />
     <Compile Include="ViewModels\FluidMasterDetailViewModel.cs" />
     <Compile Include="ViewModels\ListBoxStatesViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
@@ -106,8 +106,8 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\FluidLayout.xaml.cs">
-      <DependentUpon>FluidLayout.xaml</DependentUpon>
+    <Compile Include="Views\FluidMoving.xaml.cs">
+      <DependentUpon>FluidMoving.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FluidMasterDetail.xaml.cs">
       <DependentUpon>FluidMasterDetail.xaml</DependentUpon>
@@ -162,7 +162,7 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\FluidLayout.xaml">
+    <Page Include="Views\FluidMoving.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>

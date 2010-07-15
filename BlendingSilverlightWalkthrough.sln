@@ -18,7 +18,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BlendingSilverlightWalkthro
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "25034"
+		VWDPort = "37844"
 		ProjOutputReferences = "{4036554e-4ff0-41bf-95a0-a2fe911289da}|ClientBin|false;"
 	EndProjectSection
 EndProject
