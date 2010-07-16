@@ -31,6 +31,7 @@
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMasterDetail" TargetName="ContentFrame" Content="fluid master detail" />
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidLayout" TargetName="ContentFrame" Content="fluid layout" />
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ModelVisualStates" TargetName="ContentFrame" Content="mvvmvsm" />
             	</toolkit:WrapPanel>
             </Border>
 

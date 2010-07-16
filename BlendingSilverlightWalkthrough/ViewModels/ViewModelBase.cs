@@ -1,6 +1,8 @@
 using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace BlendingSilverlightWalkthrough.ViewModels
 {
@@ -22,6 +24,31 @@ namespace BlendingSilverlightWalkthrough.ViewModels
 
             if (handler != null)
                 handler(this, e);
+        }
+
+        protected virtual void InvokeOnDispatcher(Action action)
+        {
+            var dispatcher = GetDispatcher();
+
+            if (dispatcher != null)
+            {
+                if (dispatcher.CheckAccess())
+                {
+                    action();
+                }
+                else
+                {
+                    dispatcher.BeginInvoke(action);
+                }
+            }
+        }
+
+        private Dispatcher GetDispatcher()
+        {
+            if (Application.Current != null && Application.Current.RootVisual != null)
+                return Application.Current.RootVisual.Dispatcher;
+
+            return null;
         }
     }
 }

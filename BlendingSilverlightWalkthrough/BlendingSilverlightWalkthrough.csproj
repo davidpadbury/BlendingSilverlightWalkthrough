@@ -98,6 +98,7 @@
     <Compile Include="ViewModels\FluidMovingViewModel.cs" />
     <Compile Include="ViewModels\FluidMasterDetailViewModel.cs" />
     <Compile Include="ViewModels\ListBoxStatesViewModel.cs" />
+    <Compile Include="ViewModels\ModelVisualStatesViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\ChildWindow1.xaml.cs">
       <DependentUpon>ChildWindow1.xaml</DependentUpon>
@@ -123,6 +124,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\ListBoxStates.xaml.cs">
       <DependentUpon>ListBoxStates.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModelVisualStates.xaml.cs">
+      <DependentUpon>ModelVisualStates.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ListBoxStates.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ModelVisualStates.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -1,0 +1,55 @@
+﻿<sdk:Page	
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" 
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+    x:Class="BlendingSilverlightWalkthrough.ModelVisualStates" 
+	Title="ModelVisualStates Page"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<sdk:Page.Resources>
+		
+		<Style x:Key="ActionHyperlinkButton" TargetType="HyperlinkButton">
+			<Setter Property="Margin" Value="4,2" />
+		</Style>
+		
+	</sdk:Page.Resources>
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Style="{StaticResource HeaderTextStyle}" Text="{Binding Name}" />
+		
+		<StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
+			<StackPanel x:Name="viewingLinks" Orientation="Horizontal">			
+				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Buy" />
+				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Listen" />
+			</StackPanel>
+			<StackPanel x:Name="editingLinks" Orientation="Horizontal">			
+				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Save" />
+				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Cancel" />
+			</StackPanel>
+		</StackPanel>
+        
+		<StackPanel Grid.Row="1" HorizontalAlignment="Center">
+			
+			<TextBlock Text="Artist" />
+			<TextBox Text="{Binding Artist, Mode=TwoWay}" Width="350" />
+			
+			<TextBlock Text="Name" />
+			<TextBox Text="{Binding Name, Mode=TwoWay}" Width="350" />
+			
+			<TextBlock Text="Year" />
+			<toolkit:NumericUpDown Value="{Binding Year, Mode=TwoWay}" Minimum="1900" Maximum="2010" />
+			
+		</StackPanel>
+		
+    </Grid>
+</sdk:Page>
