@@ -94,6 +94,7 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\FluidLayoutViewModel.cs" />
     <Compile Include="ViewModels\FluidMovingViewModel.cs" />
     <Compile Include="ViewModels\FluidMasterDetailViewModel.cs" />
     <Compile Include="ViewModels\ListBoxStatesViewModel.cs" />

@@ -23,7 +23,23 @@ namespace BlendingSilverlightWalkthrough.Data
                             Artist = "The Beatles",
                             Name = "Sgt. Pepper's Lonely Hearts Club Band",
                             Year = 1967,
-                            AlbumArt = "TheBeatles_SgtPeppers.jpg"
+                            AlbumArt = "TheBeatles_SgtPeppers.jpg",
+                            Tracks = new[]
+                                {
+                                    "Sgt. Pepper's Lonely Hearts Club Band",
+                                    "With a Little Help from My Friends",
+                                    "Lucy in the Sky with Diamonds",
+                                    "Getting Better",
+                                    "Fixing a Hole",
+                                    "She's Leaving Home",
+                                    "Being for the Benefit of Mr. Kite!",
+                                    "Within You Without You",
+                                    "When I'm Sixty-Four",
+                                    "Lovely Rita",
+                                    "Good Morning Good Morning",
+                                    "Sgt. Pepper's Lonely Hearts Club Band (Reprise)",
+                                    "A Day in the Life"
+                                }
                         },
                     new Album
                         {

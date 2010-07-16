@@ -6,5 +6,6 @@ namespace BlendingSilverlightWalkthrough.Data
         public string Artist { get; set; }
         public int Year { get; set; }
         public string AlbumArt { get; set; }
+        public string[] Tracks { get; set; }
     }
 }
