@@ -60,6 +60,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Effects" />
     <Reference Include="Microsoft.Expression.Interactions" />
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
