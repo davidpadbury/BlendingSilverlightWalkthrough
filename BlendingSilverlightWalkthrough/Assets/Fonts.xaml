@@ -13,7 +13,7 @@
 
     <my:Double x:Key="ApplicationNameFontSize">50</my:Double>
     <my:Double x:Key="HeaderFontSize">21.333</my:Double>
-    <my:Double x:Key="NavigationFontSize">28</my:Double>
+    <my:Double x:Key="NavigationFontSize">20</my:Double>
     
     <my:Double x:Key="ContentFontSize">14</my:Double>
     <my:Double x:Key="HyperlinkFontSize">14</my:Double>

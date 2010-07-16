@@ -1,10 +1,11 @@
 ﻿<UserControl
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	x:Class="BlendingSilverlightWalkthrough.MainPage"
 	xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+	x:Class="BlendingSilverlightWalkthrough.MainPage"
+	mc:Ignorable="d"
 	d:DesignWidth="640" d:DesignHeight="480">
 	
     <Border Style="{StaticResource ContentBorderStyle}">
@@ -19,18 +20,18 @@
             <Border x:Name="BrandingBorder" Style="{StaticResource NavBrandingBorderStyle}">
                 <StackPanel x:Name="BrandingStackPanel" Style="{StaticResource BrandingStackPanelStyle}" >
                     <ContentControl Style="{StaticResource LogoIcon}" />
-                    <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Silverlight and Blend 4 Demos" />
+                    <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Silverlight and Blend 4 Demos" Margin="43,10,0,0" />
                 </StackPanel>
             </Border>
 
             <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}">
-                <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Home" TargetName="ContentFrame" Content="home" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMoving" TargetName="ContentFrame" Content="fluid moving" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMasterDetail" TargetName="ContentFrame" Content="fluid master detail" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidLayout" TargetName="ContentFrame" Content="fluid layout" />
-                </StackPanel>
+            	<toolkit:WrapPanel x:Name="LinksStackPanel">
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Home" TargetName="ContentFrame" Content="home" />
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMoving" TargetName="ContentFrame" Content="fluid moving" />
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMasterDetail" TargetName="ContentFrame" Content="fluid master detail" />
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidLayout" TargetName="ContentFrame" Content="fluid layout" />
+            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
+            	</toolkit:WrapPanel>
             </Border>
 
             <Border x:Name="ContentBorder" Style="{StaticResource NavContentBorderStyle}">
