@@ -7,13 +7,14 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d"
     x:Class="BlendingSilverlightWalkthrough.ModelVisualStates" 
-	Title="ModelVisualStates Page"
+	Title="ModelVisualStates"
 	d:DesignWidth="640" d:DesignHeight="480">
 
 	<sdk:Page.Resources>
 		
 		<Style x:Key="ActionHyperlinkButton" TargetType="HyperlinkButton">
 			<Setter Property="Margin" Value="4,2" />
+            <Setter Property="FontSize" Value="16" />
 		</Style>
 		
 	</sdk:Page.Resources>
