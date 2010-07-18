@@ -45,10 +45,7 @@ namespace BlendingSilverlightWalkthrough.ViewModels
 
         private Dispatcher GetDispatcher()
         {
-            if (Application.Current != null && Application.Current.RootVisual != null)
-                return Application.Current.RootVisual.Dispatcher;
-
-            return null;
+            return App.Dispatcher;
         }
     }
 }
