@@ -96,5 +96,15 @@ namespace BlendingSilverlightWalkthrough.Data
         {
             return Albums;
         }
+
+        public void Save(Action completed)
+        {
+            ThreadPool.QueueUserWorkItem(delegate
+                {
+                    Thread.Sleep(TimeSpan.FromSeconds(2));
+
+                    completed();
+                });
+        }
     }
 }

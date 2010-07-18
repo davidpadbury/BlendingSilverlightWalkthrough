@@ -95,20 +95,11 @@ namespace BlendingSilverlightWalkthrough.ViewModels
         {
             IsSaving = true;
 
-            ThreadPool.QueueUserWorkItem(delegate
-                {
-                    _album.Name = Name;
-                    _album.Artist = Artist;
-                    _album.Year = Year;
+            _album.Name = Name;
+            _album.Artist = Artist;
+            _album.Year = Year;
 
-                    Thread.Sleep(TimeSpan.FromSeconds(2));
-
-                    InvokeOnDispatcher(() =>
-                        {
-                            LoadAlbum(_album);
-                            IsSaving = false;
-                        });
-                });
+            _albumRepository.Save(SaveCompleted);
         }
 
         public void CancelEdit()
@@ -121,6 +112,15 @@ namespace BlendingSilverlightWalkthrough.ViewModels
             Name = album.Name;
             Artist = album.Artist;
             Year = album.Year;
+        }
+
+        private void SaveCompleted()
+        {
+            InvokeOnDispatcher(() =>
+            {
+                LoadAlbum(_album);
+                IsSaving = false;
+            });
         }
     }
 }
