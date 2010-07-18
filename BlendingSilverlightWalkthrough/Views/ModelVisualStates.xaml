@@ -5,40 +5,15 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="clr-namespace:BlendingSilverlightWalkthrough.ViewModels"
 	mc:Ignorable="d"
     x:Class="BlendingSilverlightWalkthrough.ModelVisualStates" 
 	Title="ModelVisualStates"
-	d:DesignWidth="640" d:DesignHeight="480">
-
-	<sdk:Page.Resources>
-		
-		<Style x:Key="ActionHyperlinkButton" TargetType="HyperlinkButton">
-			<Setter Property="Margin" Value="4,2" />
-            <Setter Property="FontSize" Value="16" />
-		</Style>
-		
-	</sdk:Page.Resources>
+	d:DesignWidth="640" d:DesignHeight="480"
+    d:DataContext="{d:DesignInstance Type=viewModels:ModelVisualStatesViewModel, IsDesignTimeCreatable=True}">
 
     <Grid x:Name="LayoutRoot">
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        
-        <TextBlock Grid.Row="0" Style="{StaticResource HeaderTextStyle}" Text="{Binding Name}" />
 		
-		<StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right">
-			<StackPanel x:Name="viewingLinks" Orientation="Horizontal">			
-				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Buy" />
-				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Listen" />
-			</StackPanel>
-			<StackPanel x:Name="editingLinks" Orientation="Horizontal">			
-				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Save" />
-				<HyperlinkButton Style="{StaticResource ActionHyperlinkButton}" Content="Cancel" />
-			</StackPanel>
-		</StackPanel>
-        
 		<StackPanel Grid.Row="1" HorizontalAlignment="Center">
 			
 			<TextBlock Text="Artist" />
@@ -49,6 +24,8 @@
 			
 			<TextBlock Text="Year" />
 			<toolkit:NumericUpDown Value="{Binding Year, Mode=TwoWay}" Minimum="1900" Maximum="2010" />
+            
+            <Button Margin="0,15" Content="Save" />
 			
 		</StackPanel>
 		
