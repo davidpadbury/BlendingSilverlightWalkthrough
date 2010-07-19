@@ -28,6 +28,8 @@
             <Button Margin="0,15" Content="Save" />
 			
 		</StackPanel>
+        
+		<toolkit:BusyIndicator x:Name="busyIndicator" />
 		
     </Grid>
 </sdk:Page>
