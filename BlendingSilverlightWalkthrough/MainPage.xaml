@@ -26,11 +26,11 @@
 
             <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}">
             	<toolkit:WrapPanel x:Name="LinksStackPanel">
-            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Home" TargetName="ContentFrame" Content="home" />
-            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMoving" TargetName="ContentFrame" Content="fluid moving" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/Home" TargetName="ContentFrame" Content="home" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMoving" TargetName="ContentFrame" Content="fluid moving" />
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidMasterDetail" TargetName="ContentFrame" Content="fluid master detail" />
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/FluidLayout" TargetName="ContentFrame" Content="fluid layout" />
-            		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ListBoxStates" TargetName="ContentFrame" Content="listbox states" />
             		<HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="/ModelVisualStates" TargetName="ContentFrame" Content="mvvmvsm" />
             	</toolkit:WrapPanel>
             </Border>
